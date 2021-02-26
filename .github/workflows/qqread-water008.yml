@@ -3,7 +3,7 @@ name: 企鹅读书-water008
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/30 6-23 * * *'
   watch:
     types: [started]
 env:
