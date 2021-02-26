@@ -6,7 +6,7 @@ name: 企鹅读书-lxk0301
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/30 * * * *'
+     - cron: '*/30 6-23 * * *'
   watch:
     types: started
 
