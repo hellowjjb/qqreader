@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-qqreader2021
+name: sync-repo231-40
 on:
   schedule:
     - cron: */20 * * * *'
