@@ -1,8 +1,8 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-qqreader231-40
+name: sync-qqreader2021
 on:
   schedule:
-    - cron: '15 23 * * *'
+    - cron: */20 * * * *'
   workflow_dispatch:
   watch:
     types: started
