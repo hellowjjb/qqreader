@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml
-name: sync-repo231-40
+name: sync-repo202102
 on:
   schedule:
     - cron: */20 * * * *'
