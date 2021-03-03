@@ -6,7 +6,7 @@ name: 企鹅读书-ziye12
 on:
   workflow_dispatch:
   schedule:
-     - cron: '0,30 0-8,14-23 * * *'
+     - cron: '0,30 12 * * *'
   watch:
     types: started
 
@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/hellowjjb/qqreader2021.git ~/qqreader2021
+          git clone https://github.com/hellowjjb/qqreader2021.git ~/qqread
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
@@ -30,13 +30,13 @@ jobs:
       - name: npm install
         if: env.QQREAD_TIMEHD
         run: |
-          cd ~/qqreader2021
+          cd ~//qqread
           npm install
       - name: '运行 【企鹅读书】'
         if: env.QQREAD_TIMEHD
         run: |
-          cd ~/qqreader2021
-          node qqreads.js
+          cd ~/qqread
+          node Task/qqread.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
